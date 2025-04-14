@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week03 Weekly Assignment</title>
+    <!-- Below is where the sheets are connected to the bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <!-- Below a & img elements add an image instead of text to navbar -->
+            <a class="navbar-brand" href="#">
+            <img src="images/coffee-icon.png" alt="cafe logo" width="30" height="24">
+            </a>
+            <!-- Copied this code from Bootstrap website to create buttons on top to navigate to other pages and utilize the styling -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- The "active" class on Contact page means the nav bar Contact button will be bolded when on this page. -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <form>
+        <div class="form-box">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" placeholder="First Name" />
+        </div>
+        <div class="form-box">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" placeholder="Last Name" />
+        </div>
+        <div class="form-box">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email" />
+        </div>   
+        <div>
+            <label for="description">Write a brief description of why you are contacting us today.</label>
+            <textarea id="description" name="description" rows="5" cols="100" placeholder="How can we help you today?"></textarea>
+        </div>   
+        
+        <!-- Copied this code from Bootstrap website to add paper airplane to submit button -->
+        <button type="submit" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+            </svg>
+            Submit
+        </button>
+    
+    </form>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

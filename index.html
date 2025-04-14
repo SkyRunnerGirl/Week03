@@ -1,0 +1,60 @@
+<!-- 
+1. Create a new website using HTML and Bootstrap +
+2. At least 2 pages +
+3. A Bootstrap navbar +
+4. A Bootstrap table
+5. A Bootstrap form
+7. Elements should stack vertically when the window is small
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week03 Weekly Assignment</title>
+    <!-- Below is where the sheets are connected to the bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <!-- Below a & img elements add an image instead of text to navbar -->
+            <a class="navbar-brand" href="#">
+            <img src="images/coffee-icon.png" alt="cafe logo" width="30" height="24">
+            </a>
+            <!-- Copied this code from Bootstrap website to create buttons on top to navigate to other pages and utilize the styling -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- The "active" class on Home page means the nav bar Home button will be bolded when on this page. -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Wrapped the h1, h3, and img elements in a div so I could center them all with the same class. The .img-fluid class allows the image to repsond to screen size. -->
+    <div class="text-center">
+        <h1>Celestial Café</h1>
+        <h3 class="fw-lighter">Welcome to our café where the coffee is out of this world!</h3>
+        <img class="img-fluid img-thumbnail" src="images/celestial_coffee.png" alt="coffee cup with celestial surrounding" />
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
