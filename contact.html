@@ -6,6 +6,7 @@
     <title>Week03 Weekly Assignment</title>
     <!-- Below is where the sheets are connected to the bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body class="container">
@@ -37,24 +38,24 @@
         </div>
     </nav>
 
-    <h1>Contact Us</h1>
-
+    <h1 id="h1-element">Contact Us</h1>
+    <!-- Added .mb-3 class to the div, .form-label class to the label, and .form-control class to the input to achieve the form look I wanted from the Bootstrap website. -->
     <form>
-        <div class="form-box">
-            <label for="firstname">First Name:</label>
-            <input type="text" name="firstname" placeholder="First Name" />
+        <div class="mb-3">
+            <label for="firstname" class="form-label">First Name:</label>
+            <input type="text" class="form-control" name="firstname" placeholder="e.g. Alice" />
         </div>
-        <div class="form-box">
-            <label for="lastname">Last Name:</label>
-            <input type="text" name="lastname" placeholder="Last Name" />
+        <div class="mb-3">
+            <label for="lastname" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" name="lastname" placeholder="e.g. Smith" />
         </div>
-        <div class="form-box">
-            <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Email" />
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email" placeholder="email@email.com" />
         </div>   
-        <div>
-            <label for="description">Write a brief description of why you are contacting us today.</label>
-            <textarea id="description" name="description" rows="5" cols="100" placeholder="How can we help you today?"></textarea>
+        <div class="mb-3">
+            <label for="description" class="form-label">Write a brief description of why you are contacting us today.</label>
+            <textarea class="form-control" id="description" name="description" rows="5" cols="100" placeholder="How can we help you today?"></textarea>
         </div>   
         
         <!-- Copied this code from Bootstrap website to add paper airplane to submit button -->

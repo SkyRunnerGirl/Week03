@@ -1,7 +1,7 @@
 <!-- 
-1. Create a new website using HTML and Bootstrap +
-2. At least 2 pages +
-3. A Bootstrap navbar +
+1. Create a new website using HTML and Bootstrap
+2. At least 2 pages
+3. A Bootstrap navbar
 4. A Bootstrap table
 5. A Bootstrap form
 7. Elements should stack vertically when the window is small
@@ -19,6 +19,7 @@
 </head>
 
 <body class="container">
+    
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -46,11 +47,12 @@
             </div>
         </div>
     </nav>
+    
     <!-- Wrapped the h1, h3, and img elements in a div so I could center them all with the same class. The .img-fluid class allows the image to repsond to screen size. -->
     <div class="text-center">
-        <h1>Celestial Café</h1>
+        <h1 id="h1-element">Celestial Café</h1>
         <h3 class="fw-lighter">Welcome to our café where the coffee is out of this world!</h3>
-        <img class="img-fluid img-thumbnail" src="images/celestial_coffee.png" alt="coffee cup with celestial surrounding" />
+        <img id="index-img" class="img-fluid img-thumbnail" src="images/celestial_coffee.png" alt="coffee cup with celestial surrounding" />
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
